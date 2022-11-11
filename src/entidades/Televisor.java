@@ -53,7 +53,7 @@ después llenamos los atributos del televisor.*/
         this.resolución=Integer.parseInt(leer.nextLine());
         System.out.print("sintonizador TDT: true/false");
         this.sintonizadorTDT=Boolean.parseBoolean(leer.nextLine());
-      
+        this.precio=this.precioFinal();
         return this;
     }
     
