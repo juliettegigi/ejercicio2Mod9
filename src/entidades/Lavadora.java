@@ -40,7 +40,7 @@ después llenamos el atributo propio de la lavadora*/
          Scanner leer=new Scanner(System.in);
          System.out.print("Carga: ");
         this.cargaKg=Float.parseFloat(leer.nextLine());
-        
+        this.precio=this.precioFinal();
     }
     
     /*Método precioFinal(): este método será heredado y se le sumará la siguiente
