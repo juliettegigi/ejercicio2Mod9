@@ -66,7 +66,7 @@ public abstract class  Electrodoméstico {
 electrodoméstico, también llama los métodos para comprobar el color y el
 consumo. Al precio se le da un valor base de $1000.*/
     public Electrodoméstico crearElectrodoméstico(){
-        this.precio = 1000f;
+        this.precio=1000;
         Scanner leer=new Scanner(System.in);
         System.out.print("Color: ");
         this.color=Colores.values()[comprobarColor(leer.nextLine())];
@@ -117,7 +117,7 @@ objeto y no será visible*/
 el valor del precio. Esta es la lista de precios*/
     
     public Float precioFinal(){
-        return this.consumoEnerg.getPrecio()+this.precio+(this.peso>=80?1000:
+        return this.consumoEnerg.getPrecio()+1000+(this.peso>=80?1000:
                             this.peso>=50?800:
                             this.peso>=20?500:100);
                 
